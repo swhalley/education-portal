@@ -13,10 +13,10 @@ import {
 
 const CustomTableCell = withStyles(theme => ({
   head: {
-    padding: 1
+    padding: 5
   },
   body: {
-    padding: 1
+    padding: 5
   }
 }))(TableCell);
 
@@ -31,15 +31,17 @@ const styles = theme => ({
   tableWrapper: {
     overflowX: "auto"
   },
-  stripped: {
+  row: {
     "&:nth-of-type(odd)": {
       backgroundColor: theme.palette.background.default
-    }
+    },
+    height: "initial"
   }
 });
 
 /**
  * TODO Separate "school" specifics from "My Table from Material UI"
+ * TODO convert to React Tables to get bette sorting and filtering????? b/c Material UI is a beast and gives nothing
  */
 class DataTable extends Component {
   state = {
@@ -126,7 +128,7 @@ class DataTable extends Component {
         }
 
         return (
-          <TableRow key={row} className={classes.stripped}>
+          <TableRow key={row} className={classes.row}>
             <CustomTableCell>{row}</CustomTableCell>
             {yearData}
           </TableRow>
@@ -144,7 +146,7 @@ class DataTable extends Component {
     let emptyRows = [];
     for (let i = 0; i < numEmptyRows; i++) {
       emptyRows.push(
-        <TableRow key={i} className={classes.stripped}>
+        <TableRow key={i} className={classes.row}>
           <CustomTableCell colSpan={schoolsList.length + 1} />
         </TableRow>
       );

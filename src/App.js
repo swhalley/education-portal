@@ -7,7 +7,7 @@ class App extends Component {
 
     return (
       <React.Fragment>
-        <DataTable src="tkm2-qp3f.json" />
+        <DataTable src="data/tkm2-qp3f.json" />
       </React.Fragment>
     );
   }
