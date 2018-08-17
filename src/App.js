@@ -1,14 +1,21 @@
 import React, { Component } from "react";
-import DataTable from "./components/DataTable";
+import { Grid, Typography } from "@material-ui/core";
+import SchoolsTable from "./components/SchoolsTable";
 
 class App extends Component {
   render() {
-    //https://data.princeedwardisland.ca/resource/tkm2-qp3f.json
-
     return (
-      <React.Fragment>
-        <DataTable src="data/tkm2-qp3f.json" />
-      </React.Fragment>
+      <Grid container spacing={8}>
+        <Grid item xs={12}>
+          <Typography>Header and Nav</Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <SchoolsTable
+            src="data/tkm2-qp3f.json" //https://data.princeedwardisland.ca/resource/tkm2-qp3f.json
+            searchLabel="School Name Search"
+          />
+        </Grid>
+      </Grid>
     );
   }
 }
