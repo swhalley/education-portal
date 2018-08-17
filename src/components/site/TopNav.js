@@ -24,8 +24,6 @@ class TopNav extends Component {
   };
 
   render() {
-    const { history } = this.props;
-
     return (
       <AppBar position="static">
         <Toolbar>
@@ -45,21 +43,24 @@ class TopNav extends Component {
           onClose={() => this.setState({ navOpen: false })}
         >
           <List component="nav">
-            <ListItem button onClick={() => history.push("/")}>
+            <ListItem button onClick={() => this.menuItemClick("/")}>
               <ListItemIcon>
                 <HomeIcon />
               </ListItemIcon>
               <ListItemText primary="Home" />
             </ListItem>
 
-            <ListItem button onClick={() => history.push("/schoolMap")}>
+            <ListItem button onClick={() => this.menuItemClick("/schoolMap")}>
               <ListItemIcon>
                 <MyLocationIcon />
               </ListItemIcon>
               <ListItemText primary="School Map" />
             </ListItem>
 
-            <ListItem button onClick={() => history.push("/schoolAttendance")}>
+            <ListItem
+              button
+              onClick={() => this.menuItemClick("/schoolAttendance")}
+            >
               <ListItemIcon>
                 <SchoolIcon />
               </ListItemIcon>
@@ -67,7 +68,7 @@ class TopNav extends Component {
             </ListItem>
 
             <Divider />
-            <ListItem button onClick={() => history.push("/wishList")}>
+            <ListItem button onClick={() => this.menuItemClick("/wishList")}>
               <ListItemIcon>
                 <PlaylistAddIcon />
               </ListItemIcon>
@@ -77,6 +78,11 @@ class TopNav extends Component {
         </Drawer>
       </AppBar>
     );
+  }
+
+  menuItemClick(path) {
+    this.props.history.push(path);
+    this.setState({ navOpen: false });
   }
 }
 

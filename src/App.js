@@ -6,7 +6,7 @@ import TopNav from "./components/site/TopNav";
 
 let styles = {
   body: {
-    padding: "0px 20px"
+    padding: "10px 20px"
   }
 };
 
