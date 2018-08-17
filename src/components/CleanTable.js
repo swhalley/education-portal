@@ -114,7 +114,7 @@ class CleanTable extends Component {
           );
         });
         return (
-          <TableRow key={row[0]} className={classes.row}>
+          <TableRow key={row[0]} className={classes.row} hover={true}>
             {columns}
           </TableRow>
         );
