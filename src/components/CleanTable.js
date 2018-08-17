@@ -87,10 +87,11 @@ class CleanTable extends Component {
 
     let emptyRows = [];
     for (let i = 0; i < numEmptyRows; i++) {
-      //TODO Bug, the colspan is full length of all schools. I want the years + school name.
       emptyRows.push(
         <TableRow key={i} className={classes.row}>
-          <CustomTableCell colSpan={data.length + 1}>&nbsp;</CustomTableCell>
+          <CustomTableCell colSpan={(data[0] || [""]).length}>
+            &nbsp;
+          </CustomTableCell>
         </TableRow>
       );
     }
