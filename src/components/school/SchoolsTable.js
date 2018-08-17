@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { loadSchoolData, getMinYear, getMaxYear } from "./SchoolDataUtil";
-import SearchableTable from "./SearchableTable";
+import SearchableTable from "../site/SearchableTable";
 
 class SchoolsTable extends Component {
   state = {

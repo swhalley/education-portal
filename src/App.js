@@ -1,23 +1,43 @@
 import React, { Component } from "react";
-import { Grid, Typography } from "@material-ui/core";
-import SchoolsTable from "./components/SchoolsTable";
+import { withStyles } from "@material-ui/core";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import SchoolsTable from "./components/school/SchoolsTable";
+import TopNav from "./components/site/TopNav";
+
+let styles = {
+  body: {
+    padding: "0px 20px"
+  }
+};
 
 class App extends Component {
   render() {
+    const { classes } = this.props;
+
     return (
-      <Grid container spacing={8}>
-        <Grid item xs={12}>
-          <Typography>Header and Nav</Typography>
-        </Grid>
-        <Grid item xs={12}>
-          <SchoolsTable
-            src="data/tkm2-qp3f.json" //https://data.princeedwardisland.ca/resource/tkm2-qp3f.json
-            searchLabel="School Name Search"
-          />
-        </Grid>
-      </Grid>
+      <BrowserRouter>
+        <div>
+          <TopNav />
+          <div className={classes.body}>
+            <Switch>
+              <Route
+                path="/schoolAttendance"
+                render={() => (
+                  <SchoolsTable
+                    src="data/tkm2-qp3f.json" //https://data.princeedwardisland.ca/resource/tkm2-qp3f.json
+                    searchLabel="School Name Search"
+                  />
+                )}
+              />
+              <Route path="/schoolMap" render={() => <div>School Map</div>} />
+              <Route path="/wishList" render={() => <div>Wish List</div>} />
+              <Route render={() => <div>Home Page</div>} />
+            </Switch>
+          </div>
+        </div>
+      </BrowserRouter>
     );
   }
 }
 
-export default App;
+export default withStyles(styles)(App);
