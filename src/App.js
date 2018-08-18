@@ -3,6 +3,8 @@ import { withStyles } from "@material-ui/core";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import SchoolsTable from "./components/school/SchoolsTable";
 import TopNav from "./components/site/TopNav";
+import Home from "./components/site/Home";
+import WishList from "./components/site/WishList";
 
 let styles = {
   body: {
@@ -30,8 +32,8 @@ class App extends Component {
                 )}
               />
               <Route path="/schoolMap" render={() => <div>School Map</div>} />
-              <Route path="/wishList" render={() => <div>Wish List</div>} />
-              <Route render={() => <div>Home Page</div>} />
+              <Route path="/wishList" component={WishList} />
+              <Route component={Home} />
             </Switch>
           </div>
         </div>
