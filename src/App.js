@@ -5,6 +5,7 @@ import SchoolsTable from "./components/school/SchoolsTable";
 import TopNav from "./components/site/TopNav";
 import Home from "./components/site/Home";
 import WishList from "./components/site/WishList";
+import Families from "./components/site/Families";
 
 let styles = {
   body: {
@@ -33,6 +34,7 @@ class App extends Component {
               />
               <Route path="/schoolMap" render={() => <div>School Map</div>} />
               <Route path="/wishList" component={WishList} />
+              <Route path="/families" component={Families} />
               <Route component={Home} />
             </Switch>
           </div>
