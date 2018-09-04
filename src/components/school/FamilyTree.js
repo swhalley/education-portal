@@ -1,19 +1,12 @@
 import React, { Component } from "react";
 import SchoolCard from "./SchoolCard";
 import "./FamilyTree.css";
+import { withTheme } from "@material-ui/core";
 
-let colorIndex = 0;
-const getColors = function() {
-  let color = (colorIndex * (360 / 10)) % 360;
-  colorIndex++;
-
-  return {
-    backgroundColor: `hsl( ${color}, 75%, 50%)`,
-    color: "white",
-    textShadow:
-      "0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black"
-  };
-};
+const colors = ["primary", "secondary", "error"];
+const variants = ["main", "light", "dark"];
+let colorCounter = 0;
+let variantCounter = 0;
 
 class FamilyTree extends Component {
   state = {
@@ -26,7 +19,7 @@ class FamilyTree extends Component {
 
     return (
       <div className="grid-container grid-container-top">
-        {this.renderList(schools)}
+        {this.renderList(schools, true)}
       </div>
     );
   }
@@ -49,7 +42,9 @@ class FamilyTree extends Component {
       .catch(error => console.log(error));
   }
 
-  renderList(list) {
+  renderList(list, topLevel = false) {
+    const { theme } = this.props;
+
     return list.map(school => {
       let columns = school.children ? school.children.length : 0;
       let columnStyle = {
@@ -57,14 +52,36 @@ class FamilyTree extends Component {
         gridTemplateColumns: `repeat( ${columns}, 1fr)`
       };
 
+      if (topLevel) {
+        colorCounter = 0;
+        variantCounter = 0;
+      }
+
       let rows = this.getNumGrades(school.name);
       let rowStyle = {
-        height: `${rows * 50}px`,
-        ...getColors()
+        height: `${rows * 35}px`,
+        backgroundColor:
+          theme.palette[colors[colorCounter]][variants[variantCounter]],
+        color: theme.palette[colors[colorCounter]].contrastText,
+        boxSizing: "border-box",
+        border: "1px solid black"
       };
 
+      colorCounter++;
+      if (colorCounter === 3) {
+        colorCounter = 0;
+        variantCounter++;
+      }
+
+      if (variantCounter === 3) {
+        variantCounter = 0;
+      }
+
       return (
-        <div key={school.name}>
+        <div
+          key={school.name}
+          style={{ marginBottom: topLevel ? "20px" : "0px" }}
+        >
           <SchoolCard
             style={rowStyle}
             name={school.name}
@@ -115,4 +132,4 @@ class FamilyTree extends Component {
   }
 }
 
-export default FamilyTree;
+export default withTheme()(FamilyTree);

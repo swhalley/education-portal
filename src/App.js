@@ -32,9 +32,26 @@ class App extends Component {
                   />
                 )}
               />
-              <Route path="/schoolMap" render={() => <div>School Map</div>} />
+              <Route
+                path="/schoolMap"
+                render={() => (
+                  <div>
+                    School Map. I envision seeing all the school pins, and as
+                    you move the map, the "center" point will know what family
+                    you are in and highlight that family of schools on the map
+                  </div>
+                )}
+              />
               <Route path="/wishList" component={WishList} />
-              <Route path="/families" component={Families} />
+              <Route
+                path="/families"
+                render={() => (
+                  <Families
+                    schools="/data/wish/schools.json"
+                    families="/data/wish/familyOfSchools.json"
+                  />
+                )}
+              />
               <Route component={Home} />
             </Switch>
           </div>
