@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { withStyles } from "@material-ui/core";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import SchoolsTable from "./components/school/SchoolsTable";
 import TopNav from "./components/site/TopNav";
 import Home from "./components/site/Home";
 import WishList from "./components/site/WishList";
 import Families from "./components/site/Families";
+import Attendance from "./components/site/Attendance";
 
 let styles = {
   body: {
@@ -26,7 +26,7 @@ class App extends Component {
               <Route
                 path="/schoolAttendance"
                 render={() => (
-                  <SchoolsTable
+                  <Attendance
                     src="data/tkm2-qp3f.json" //https://data.princeedwardisland.ca/resource/tkm2-qp3f.json
                     searchLabel="School Name Search"
                   />

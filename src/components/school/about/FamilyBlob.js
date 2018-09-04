@@ -20,7 +20,7 @@ const FamilyBlob = props => {
   return (
     <ExpansionPanel>
       <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-        <Typography>Tell Me About This Page</Typography>
+        <Typography color="primary">Tell Me About This Page</Typography>
       </ExpansionPanelSummary>
       <ExpansionPanelDetails className={classes.flowLayout}>
         <p>
