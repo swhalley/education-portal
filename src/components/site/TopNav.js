@@ -6,6 +6,7 @@ import SchoolIcon from "@material-ui/icons/School";
 import MyLocationIcon from "@material-ui/icons/MyLocation";
 import PlaylistAddIcon from "@material-ui/icons/PlaylistAdd";
 import CallMergeIcon from "@material-ui/icons/CallMerge";
+import DoneOutlineIcon from "@material-ui/icons/DoneOutline";
 import {
   AppBar,
   Toolbar,
@@ -73,6 +74,13 @@ class TopNav extends Component {
                 <CallMergeIcon />
               </ListItemIcon>
               <ListItemText primary="Family of Schools" />
+            </ListItem>
+
+            <ListItem button onClick={() => this.menuItemClick("/testing")}>
+              <ListItemIcon>
+                <DoneOutlineIcon />
+              </ListItemIcon>
+              <ListItemText primary="Standardized Testing" />
             </ListItem>
 
             <Divider />

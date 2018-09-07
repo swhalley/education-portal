@@ -121,6 +121,41 @@ export default class _WishList extends Component {
                 </li>
               </ul>
             </li>
+            <li>
+              Combined Classes - Example Sheerwood's 3-4 class
+              <ul>
+                <li>Hurts students</li>
+                <li>
+                  Can a family of schools have "floater" teachers, who are
+                  assigned based on overages
+                </li>
+                <li>
+                  A teacher is assigned to a family of schools rather than a
+                  specific school
+                </li>
+                <li>
+                  If a case arises where there are not enough teachers for
+                  individual classes, a floater comes in to seperate the class
+                </li>
+                <li>They then spend the year at that school.</li>
+                <li>
+                  Could the teacher be paid a premium for all the work of being
+                  a flexible teacher who may need to provide a new curriculum
+                  each year?
+                </li>
+              </ul>
+            </li>
+            <li>
+              A new line graph showing, per school, a graph of attendance vs
+              school capacity vs teacher capacity
+              <ul>
+                <li>
+                  This could be an interesting discussion about what capacity
+                  really is. How are class sizes impacted by a true capacity
+                  view
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>

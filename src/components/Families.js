@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import FamilyOfSchoolSelect from "../school/FamilyOfSchoolSelect";
-import FamilyTree from "../school/FamilyTree";
+import FamilyOfSchoolSelect from "./school/FamilyOfSchoolSelect";
+import FamilyTree from "./school/FamilyTree";
 import { withStyles } from "@material-ui/core";
-import FamilyBlob from "../school/about/FamilyBlob";
+import FamilyBlob from "./school/about/FamilyBlob";
 
 const styles = {
   formControl: {

@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import { withStyles } from "@material-ui/core";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import TopNav from "./components/site/TopNav";
-import Home from "./components/site/Home";
-import WishList from "./components/site/WishList";
-import Families from "./components/site/Families";
-import Attendance from "./components/site/Attendance";
+import Home from "./components/Home";
+import WishList from "./components/WishList";
+import Families from "./components/Families";
+import Attendance from "./components/Attendance";
+import StandardizedTesting from "./components/StandardizedTesting";
+import SchoolMap from "./components/SchoolMap";
 
 let styles = {
   body: {
@@ -33,14 +35,8 @@ class App extends Component {
                 )}
               />
               <Route
-                path="/schoolMap"
-                render={() => (
-                  <div>
-                    School Map. I envision seeing all the school pins, and as
-                    you move the map, the "center" point will know what family
-                    you are in and highlight that family of schools on the map
-                  </div>
-                )}
+                path="/schoolMap" //https://data.princeedwardisland.ca/resource/irvk-xaw3.json
+                render={() => <SchoolMap src="data/irvk-xaw3.json" />}
               />
               <Route path="/wishList" component={WishList} />
               <Route
@@ -52,6 +48,7 @@ class App extends Component {
                   />
                 )}
               />
+              <Route path="/testing" component={StandardizedTesting} />
               <Route component={Home} />
             </Switch>
           </div>

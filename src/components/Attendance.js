@@ -4,8 +4,8 @@ import InfoIcon from "@material-ui/icons/Info";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
 
-import SchoolsTable from "../school/SchoolsTable";
-import AttendanceBlob from "../school/about/AttendanceBlob";
+import SchoolsTable from "./school/SchoolsTable";
+import AttendanceBlob from "./school/about/AttendanceBlob";
 import { withStyles, SnackbarContent, Snackbar } from "@material-ui/core";
 
 const styles = theme => ({
@@ -39,7 +39,7 @@ class Attendance extends Component {
         <AttendanceBlob />
         <Snackbar
           open={this.state.infoOpen}
-          autoHideDuration={10000}
+          autoHideDuration={20000}
           onClose={() => this.setState({ infoOpen: false })}
           className={classes.wrapper}
         >
