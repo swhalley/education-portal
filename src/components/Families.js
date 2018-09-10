@@ -16,13 +16,15 @@ class Families extends Component {
   };
 
   render() {
+    const classes = this.props.classes;
+
     return (
       <React.Fragment>
         <FamilyBlob />
         <FamilyOfSchoolSelect
-          src={this.props.schools}
+          families={this.props.families}
           onChange={this.familySelected.bind(this)}
-          {...this.props}
+          className={classes.formControl}
         />
         <FamilyTree
           schools={this.props.schools}

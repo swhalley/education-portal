@@ -9,37 +9,14 @@ let colorCounter = 0;
 let variantCounter = 0;
 
 class FamilyTree extends Component {
-  state = {
-    familyOfSchools: {},
-    schools: []
-  };
-
   render() {
-    let schools = this.state.familyOfSchools[this.props.selectedFamily] || [];
+    let schools = this.props.families[this.props.selectedFamily] || [];
 
     return (
       <div className="grid-container grid-container-top">
         {this.renderList(schools, true)}
       </div>
     );
-  }
-
-  componentDidMount() {
-    fetch(this.props.families)
-      .then(response => response.json())
-      .then(familyOfSchools => {
-        this.setState({
-          familyOfSchools
-        });
-      })
-      .catch(error => {
-        console.log(error);
-      });
-
-    fetch(this.props.schools)
-      .then(response => response.json())
-      .then(schools => this.setState({ schools: schools.schools }))
-      .catch(error => console.log(error));
   }
 
   renderList(list, topLevel = false) {
@@ -103,7 +80,7 @@ class FamilyTree extends Component {
       gradeMax: "-"
     };
 
-    let school = this.state.schools.find(
+    let school = this.props.schools.find(
       school => school.school_name === schoolName
     );
 
@@ -116,7 +93,7 @@ class FamilyTree extends Component {
   }
 
   getNumGrades(schoolName) {
-    let school = this.state.schools.find(
+    let school = this.props.schools.find(
       school => school.school_name === schoolName
     );
 

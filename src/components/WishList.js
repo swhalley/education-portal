@@ -33,6 +33,10 @@ export default class _WishList extends Component {
                   Though the portal was released in 2018, most of the Education
                   data has not been updated since 2015
                 </li>
+                <li>
+                  Late Aug there was an update to add in 2016 and 2017 data. I
+                  need to take this into account
+                </li>
               </ul>
             </li>
             <li>

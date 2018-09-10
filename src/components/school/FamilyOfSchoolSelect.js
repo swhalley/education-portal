@@ -5,12 +5,11 @@ import InputLabel from "@material-ui/core/InputLabel";
 import { FormControl } from "@material-ui/core";
 
 export default class FamilyOfSchoolSelect extends Component {
-  state = { selectedFamily: "", families: [] };
+  state = { selectedFamily: "" };
 
   render() {
-    const { classes } = this.props;
     return (
-      <FormControl className={classes.formControl}>
+      <FormControl className={this.props.className}>
         <InputLabel htmlFor="school_family_select">
           Select a School Family
         </InputLabel>
@@ -30,24 +29,11 @@ export default class FamilyOfSchoolSelect extends Component {
     );
   }
 
-  componentDidMount() {
-    fetch(this.props.src)
-      .then(response => {
-        response.json().then(schools => {
-          this.setState({
-            families: [...new Set(schools.schools.map(school => school.family))]
-          });
-        });
-      })
-      .catch(error => {
-        console.error("Unable to load school data for families of schools");
-      });
-  }
-
   generateMenuItems() {
     var result = [];
+    let families = Object.keys(this.props.families);
 
-    this.state.families.forEach(family =>
+    families.forEach(family =>
       result.push(
         <MenuItem value={family} key={family}>
           {family}

@@ -15,7 +15,14 @@ const Map = compose(
   withGoogleMap
 )(props => {
   return (
-    <GoogleMap defaultZoom={10} defaultCenter={{ lat: 46.2382, lng: -63.1311 }}>
+    <GoogleMap
+      defaultZoom={10}
+      defaultCenter={{ lat: 46.2382, lng: -63.1311 }}
+      ref={map => (this.map = map)}
+      onDragEnd={() => {
+        console.log(this.map.getCenter().toJSON());
+      }}
+    >
       {props.children}
     </GoogleMap>
   );
