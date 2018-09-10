@@ -25,7 +25,7 @@ export default class StandardizedTesting extends Component {
             use it. Since this is hosted everywhere.
           </li>
           <li>
-            Got this one from :
+            Got this image from :
             <a href="http://ellingtonmontessori.ca/wp-content/uploads/2017/01/climb-a-tree.jpg">
               Ellington Montessori Website
             </a>
