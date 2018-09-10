@@ -7,6 +7,13 @@ export default class StandardizedTesting extends Component {
       <div>
         <img src="climb-a-tree.jpg" alt="Not all tests are created equal" />
 
+        <Typography>
+          This is a pet project of mine. I want to get the raw data for the
+          standardized testing out of PDF and into an easy to consume form. This
+          has not been the case as the government only releases PDF's of the
+          final reports.
+        </Typography>
+
         <Typography>For This Page: </Typography>
         <ul>
           <li>I am someone who did not thrive in the testing model. </li>

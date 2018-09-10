@@ -7,6 +7,8 @@ import MyLocationIcon from "@material-ui/icons/MyLocation";
 import PlaylistAddIcon from "@material-ui/icons/PlaylistAdd";
 import CallMergeIcon from "@material-ui/icons/CallMerge";
 import DoneOutlineIcon from "@material-ui/icons/DoneOutline";
+import Battery90Icon from "@material-ui/icons/Battery90";
+
 import {
   AppBar,
   Toolbar,
@@ -81,6 +83,13 @@ class TopNav extends Component {
                 <DoneOutlineIcon />
               </ListItemIcon>
               <ListItemText primary="Standardized Testing" />
+            </ListItem>
+
+            <ListItem button onClick={() => this.menuItemClick("/capacity")}>
+              <ListItemIcon>
+                <Battery90Icon />
+              </ListItemIcon>
+              <ListItemText primary="True Capacity" />
             </ListItem>
 
             <Divider />

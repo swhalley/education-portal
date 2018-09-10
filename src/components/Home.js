@@ -4,23 +4,28 @@ export default class WishList extends Component {
   render() {
     return (
       <div>
-        <h1 id="overview">Overview</h1>
+        <h1 id="overview">PEI Education - Let's Come Up With Some Ideas</h1>
         <p>
-          Since the PEI Government started releasing open data some time around
-          2016 I have been interest in putting together a portal that lets
-          people look up schools and find information about them. The idea is
-          that there will be statistical tables, interactive maps and
-          informative guides.
+          There have been many hot topics in the media recently about the PEI
+          Education system. Some of them include:
+        </p>
+        <ul>
+          <li>Schools Over Capacity</li>
+          <li>Class Sizes Growing</li>
+          <li>Attendance Decreasing</li>
+          <li>School Rezoning</li>
+        </ul>
+        <p>
+          In the media you hear from all sides. The School board will tell us
+          that the number of students attending classes is decreasing. the
+          Teacher's union is telling us that class sizes are becoming
+          unmanageable and unsafe. Parent's are complaining that schools are
+          crowded, over capacity and boundries are changing.
         </p>
         <p>
-          In 2018 the Open Data portal went online which allows us to use the
-          most up to date data that the government is providing. The new API
-          provided by Socrata makes it easy to query and access data which
-          brought this site to life.
-        </p>
-        <p>
-          Check the Wishlist section for further ideas I want to see come from
-          the Education section of the open data portal.
+          Most arguments are made with no source to the information. I wanted to
+          create a portal with some backing data so we could look at and make
+          our own conclusions.
         </p>
         <h1 id="data-licence">Data Licence</h1>
         <p>

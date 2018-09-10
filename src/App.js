@@ -8,6 +8,7 @@ import Families from "./components/Families";
 import Attendance from "./components/Attendance";
 import StandardizedTesting from "./components/StandardizedTesting";
 import SchoolMap from "./components/SchoolMap";
+import Capacity from "./components/Capacity";
 
 let styles = {
   body: {
@@ -49,6 +50,7 @@ class App extends Component {
                 )}
               />
               <Route path="/testing" component={StandardizedTesting} />
+              <Route path="/capacity" render={() => <Capacity />} />
               <Route component={Home} />
             </Switch>
           </div>

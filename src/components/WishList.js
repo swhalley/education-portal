@@ -36,19 +36,6 @@ export default class _WishList extends Component {
               </ul>
             </li>
             <li>
-              School Capacity
-              <ul>
-                <li>
-                  Understanding how many kids can fit in each school would be a
-                  nice visual to see how the trends over time show capacity
-                  issues in schools.
-                </li>
-                <li>
-                  Data like this could be cross referenced vs Migration Data
-                </li>
-              </ul>
-            </li>
-            <li>
               Class Breakdown
               <ul>
                 <li>
@@ -65,48 +52,6 @@ export default class _WishList extends Component {
               </ul>
             </li>
             <li>
-              Family of Schools
-              <ul>
-                <li>
-                  Schools feed into each other. knowing what schools feed into
-                  others would make for some interesting mapping.
-                </li>
-                <li>
-                  Thinking about a google maps integration which can discover
-                  your location and show you all the schools which would be
-                  attended. I believe there is GIS information out there with
-                  school districts that could helps with this
-                </li>
-              </ul>
-            </li>
-            <li>
-              Basic School Information
-              <ul>
-                <li>What Grades are taught at a school?</li>
-                <li>Phone numbers</li>
-                <li>Address (found in GIS data)</li>
-              </ul>
-            </li>
-            <li>
-              Standardized Testing
-              <ul>
-                <li>
-                  currently all of the provincial assessment scores are released
-                  via PDF. The format of the report changes every year so it is
-                  hard to pull data off of the reports in a meaningful way.
-                </li>
-                <li>
-                  I would like to look at trends between capacity and test
-                  scores.
-                </li>
-                <li>
-                  Standardized testing is far from the truth about how a school
-                  or its students are performing. But this may be a good first
-                  step to starting that discussion.
-                </li>
-              </ul>
-            </li>
-            <li>
               Bus Routes
               <ul>
                 <li>
@@ -118,6 +63,9 @@ export default class _WishList extends Component {
                 <li>
                   Releasing the data would allow a creative mind the ability to
                   come up with something that is more user friendly and modern.
+                </li>
+                <li>
+                  2018 There is a new site which is more user friendly, no login
                 </li>
               </ul>
             </li>
@@ -142,17 +90,6 @@ export default class _WishList extends Component {
                   Could the teacher be paid a premium for all the work of being
                   a flexible teacher who may need to provide a new curriculum
                   each year?
-                </li>
-              </ul>
-            </li>
-            <li>
-              A new line graph showing, per school, a graph of attendance vs
-              school capacity vs teacher capacity
-              <ul>
-                <li>
-                  This could be an interesting discussion about what capacity
-                  really is. How are class sizes impacted by a true capacity
-                  view
                 </li>
               </ul>
             </li>
