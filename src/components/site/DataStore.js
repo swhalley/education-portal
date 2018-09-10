@@ -38,7 +38,7 @@ class DataStore extends Component {
    * https://edu.princeedwardisland.ca/psb/schools/school-information-2/
    */
   loadSchoolInformation() {
-    this.retrieveAndSet("/data/wish/schools.json", "schools");
+    this.retrieveAndSet("/data/wish/schools.json", "schoolInformation");
   }
 
   loadFamilyOfSchools() {

@@ -48,7 +48,7 @@ class App extends Component {
                     <DataStoreConsumer>
                       {store => (
                         <Families
-                          schools={store.schools}
+                          schools={store.schoolInformation}
                           families={store.familyOfSchools}
                         />
                       )}
