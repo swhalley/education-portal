@@ -42,8 +42,12 @@ class App extends Component {
                   )}
                 />
                 <Route
-                  path="/schoolMap" //https://data.princeedwardisland.ca/resource/irvk-xaw3.json
-                  render={() => <SchoolMap src="data/irvk-xaw3.json" />}
+                  path="/schoolMap"
+                  render={() => (
+                    <DataStoreConsumer>
+                      {store => <SchoolMap dataPoints={store.gisData} />}
+                    </DataStoreConsumer>
+                  )}
                 />
                 <Route path="/wishList" component={WishList} />
                 <Route
