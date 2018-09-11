@@ -49,7 +49,6 @@ class App extends Component {
                     </DataStoreConsumer>
                   )}
                 />
-                <Route path="/wishList" component={WishList} />
                 <Route
                   path="/families"
                   render={() => (
@@ -65,6 +64,7 @@ class App extends Component {
                 />
                 <Route path="/testing" component={StandardizedTesting} />
                 <Route path="/capacity" render={() => <Capacity />} />
+                <Route path="/wishList" component={WishList} />
                 <Route component={Home} />
               </Switch>
             </div>

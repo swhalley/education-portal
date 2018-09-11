@@ -31,8 +31,8 @@ class DataStore extends Component {
   componentDidMount() {
     this.load("familyOfSchools", "/data/wish/familyOfSchools.json");
     this.load("schoolInformation", "/data/wish/schools.json");
-    this.load("attendance", "data/tkm2-qp3f.json"); //https://data.princeedwardisland.ca/resource/tkm2-qp3f.json"
-    this.load("gisData", "data/irvk-xaw3.json"); ////https://data.princeedwardisland.ca/resource/irvk-xaw3.json
+    this.load("attendance", process.env.REACT_APP_DATA_URL_ATTENDANCE);
+    this.load("gisData", process.env.REACT_APP_DATA_URL_GIS);
   }
 
   load(prop, src) {
