@@ -51,6 +51,7 @@ class App extends Component {
                           schools={store.schoolInformation}
                           families={store.familyOfSchools}
                           attendance={store.attendance}
+                          lookup={store.lookupMap}
                         />
                       )}
                     </DataStoreConsumer>

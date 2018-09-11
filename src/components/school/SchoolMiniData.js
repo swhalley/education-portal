@@ -42,7 +42,11 @@ class SchoolMiniData extends Component {
   }
 
   generateAddress(address) {
-    return address.split(",").map(addressPart => <dd>{addressPart}</dd>);
+    return address
+      .split(",")
+      .map(addressPart => (
+        <dd key={`${address}_${addressPart}`}>{addressPart}</dd>
+      ));
   }
 }
 

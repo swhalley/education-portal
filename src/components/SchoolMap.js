@@ -3,6 +3,7 @@ import { Drawer } from "@material-ui/core";
 import Map from "./site/Map";
 import { Marker } from "react-google-maps"; //SMELL refactor into "PEISchoolMap class"
 import SchoolMiniData from "./school/SchoolMiniData";
+import { lookup } from "./site/AlternativeNameLookup";
 
 export default class SchoolMap extends Component {
   state = {
@@ -60,27 +61,48 @@ export default class SchoolMap extends Component {
   }
 
   getFamily(selectedSchool) {
+    let alternativeName = lookup(
+      this.props.lookup,
+      "gis",
+      "schoolInformation",
+      selectedSchool
+    );
+
     let school =
       this.props.schools.find(
-        school => school.school_name === selectedSchool
+        school => school.school_name === alternativeName
       ) || {};
 
     return school.family;
   }
 
   getGrades(selectedSchool) {
+    let alternativeName = lookup(
+      this.props.lookup,
+      "gis",
+      "schoolInformation",
+      selectedSchool
+    );
+
     let school =
       this.props.schools.find(
-        school => school.school_name === selectedSchool
+        school => school.school_name === alternativeName
       ) || {};
 
     return { gradeMin: school.gradeMin, gradeMax: school.gradeMax };
   }
 
   getEnrollment(selectedSchool) {
+    let alternativeName = lookup(
+      this.props.lookup,
+      "gis",
+      "attendance",
+      selectedSchool
+    );
+
     let school = this.props.attendance
       .filter(school => {
-        return school.school_name === selectedSchool;
+        return school.school_name === alternativeName;
       })
       .reduce((prev, current) => {
         return prev.year > current.year ? prev : current;
