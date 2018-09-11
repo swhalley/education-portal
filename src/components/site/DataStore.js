@@ -41,7 +41,7 @@ class DataStore extends Component {
   }
 
   load(prop, src) {
-    fetch(src)
+    fetch(src + "?$limit=5000")
       .then(response => response.json())
       .then(data => {
         this.setState({ [prop]: data });

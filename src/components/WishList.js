@@ -37,6 +37,13 @@ export default class _WishList extends Component {
                   Late Aug there was an update to add in 2016 and 2017 data. I
                   need to take this into account
                 </li>
+                <li>
+                  Socrata by default limits to 1000 records returned. need to
+                  add the parameter $limit=5000 to get more records. Prior to
+                  this years update, there were &lt; 1000 records so the limit
+                  wasn't realized until 2016 and 2017 data was added and pushed
+                  this over 1200 records.
+                </li>
               </ul>
             </li>
             <li>
