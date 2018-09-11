@@ -13,7 +13,7 @@ class FamilyTree extends Component {
     let schools = this.props.families[this.props.selectedFamily] || [];
 
     return (
-      <div className="grid-container grid-container-top">
+      <div className={`grid-container ${this.props.className}`}>
         {this.renderList(schools, true)}
       </div>
     );

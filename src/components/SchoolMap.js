@@ -1,11 +1,18 @@
 import React, { Component } from "react";
-import { Drawer } from "@material-ui/core";
+import { Drawer, withStyles } from "@material-ui/core";
 import Map from "./site/Map";
 import { Marker } from "react-google-maps"; //SMELL refactor into "PEISchoolMap class"
 import SchoolMiniData from "./school/SchoolMiniData";
 import { lookup } from "./site/AlternativeNameLookup";
+import FamilyTree from "./school/FamilyTree";
 
-export default class SchoolMap extends Component {
+const styles = {
+  miniDrawerFamily: {
+    maxWidth: "60vw"
+  }
+};
+
+class SchoolMap extends Component {
   state = {
     drawerOpen: false
   };
@@ -13,6 +20,7 @@ export default class SchoolMap extends Component {
   render() {
     let markers = this.getMarkers(this.props.dataPoints);
     const { selectedSchool } = this.state;
+    const { schools, families, classes } = this.props;
 
     return (
       <div>
@@ -35,7 +43,14 @@ export default class SchoolMap extends Component {
             grades={this.getGrades(selectedSchool)}
             address={this.getAddress(selectedSchool)}
             enrollment={this.getEnrollment(selectedSchool)}
-          />
+          >
+            <FamilyTree
+              schools={schools}
+              families={families}
+              selectedFamily={this.getFamily(selectedSchool)}
+              className={classes.miniDrawerFamily}
+            />
+          </SchoolMiniData>
         </Drawer>
       </div>
     );
@@ -123,3 +138,5 @@ export default class SchoolMap extends Component {
     return school.address;
   }
 }
+
+export default withStyles(styles)(SchoolMap);

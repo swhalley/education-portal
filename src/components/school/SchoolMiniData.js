@@ -8,6 +8,7 @@ const styles = {
   }
 };
 
+//SMELL - too many parameters. Can these be broken out into child components?
 class SchoolMiniData extends Component {
   render() {
     const { grades, enrollment, family, classes } = this.props;
@@ -36,6 +37,7 @@ class SchoolMiniData extends Component {
               {this.generateAddress(this.props.address)}
             </dl>
           </Typography>
+          {this.props.children}
         </CardContent>
       </Card>
     );

@@ -114,6 +114,15 @@ export default class _WishList extends Component {
                 </li>
               </ul>
             </li>
+            <li>
+              How do I get an App Key?
+              <ul>
+                <li>
+                  Socrata Docs takes me to PEI Government Login screen. I can't
+                  create an account.
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
