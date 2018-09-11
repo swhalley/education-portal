@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Map from "./site/Map";
-import { Marker } from "react-google-maps"; //smell refactor into "PEISchoolMap class"
+import { Marker } from "react-google-maps"; //SMELL refactor into "PEISchoolMap class"
 
 export default class SchoolMap extends Component {
   render() {
