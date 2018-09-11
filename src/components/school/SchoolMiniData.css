@@ -1,0 +1,14 @@
+/* From https://clicknathan.com/web-design/styling-html-5-description-lists-formerly-known-as-definition-lists-properly/ */
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+dt {
+  width: 33%;
+  font-weight: bold;
+}
+dd {
+  margin-left: auto;
+  width: 66%;
+}

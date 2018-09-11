@@ -45,7 +45,14 @@ class App extends Component {
                   path="/schoolMap"
                   render={() => (
                     <DataStoreConsumer>
-                      {store => <SchoolMap dataPoints={store.gisData} />}
+                      {store => (
+                        <SchoolMap
+                          dataPoints={store.gisData}
+                          schools={store.schoolInformation}
+                          families={store.familyOfSchools}
+                          attendance={store.attendance}
+                        />
+                      )}
                     </DataStoreConsumer>
                   )}
                 />
