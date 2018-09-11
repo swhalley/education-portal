@@ -31,10 +31,14 @@ class App extends Component {
                 <Route
                   path="/schoolAttendance"
                   render={() => (
-                    <Attendance
-                      src="data/tkm2-qp3f.json" //https://data.princeedwardisland.ca/resource/tkm2-qp3f.json
-                      searchLabel="School Name Search"
-                    />
+                    <DataStoreConsumer>
+                      {store => (
+                        <Attendance
+                          attendanceData={store.attendance}
+                          searchLabel="School Name Search"
+                        />
+                      )}
+                    </DataStoreConsumer>
                   )}
                 />
                 <Route

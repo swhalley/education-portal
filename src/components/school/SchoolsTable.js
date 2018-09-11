@@ -1,49 +1,32 @@
 import React, { Component } from "react";
-import { loadSchoolData, getMinYear, getMaxYear } from "./SchoolDataUtil";
 import SearchableTable from "../site/SearchableTable";
 
 class SchoolsTable extends Component {
-  state = {
-    schoolData: {},
-    schoolList: [],
-    yearMin: 0,
-    yearMax: 0
-  };
-
   render() {
+    let schoolData = this.props.attendanceData.reduce(this.normalizeData, {});
+    let yearMin = this.getMinYear(schoolData);
+    let yearMax = this.getMaxYear(schoolData);
+
     return (
       <SearchableTable
-        header={this.getHeaderData()}
-        data={this.getBodyData()}
+        header={this.getHeaderData(yearMin, yearMax)}
+        data={this.getBodyData(schoolData, yearMin, yearMax)}
         searchLabel={"School Name Search"}
       />
     );
   }
 
-  componentDidMount() {
-    loadSchoolData(this.props.src)
-      .then(data => {
-        this.setState({
-          schoolData: data,
-          schoolList: Object.keys(data),
-          yearMin: getMinYear(data),
-          yearMax: getMaxYear(data)
-        });
-      })
-      .catch(error => console.log(error));
-  }
-
-  getHeaderData() {
+  getHeaderData(yearMin, yearMax) {
     let headers = ["School Name"];
-    for (let year = this.state.yearMin; year <= this.state.yearMax; year++) {
+    for (let year = yearMin; year <= yearMax; year++) {
       headers.push(year);
     }
 
     return headers;
   }
 
-  getBodyData() {
-    const { yearMin, yearMax, schoolList, schoolData } = this.state;
+  getBodyData(schoolData, yearMin, yearMax) {
+    const schoolList = Object.keys(schoolData);
 
     return schoolList.map(schoolName => {
       let result = [schoolName];
@@ -54,6 +37,31 @@ class SchoolsTable extends Component {
 
       return result;
     });
+  }
+
+  normalizeData(previousValue, currentValue) {
+    let school = previousValue[currentValue.school_name] || {};
+
+    school[currentValue.year] = currentValue.enrollment;
+    previousValue[currentValue.school_name] = school;
+
+    return previousValue;
+  }
+
+  getMinYear(data) {
+    return Object.keys(data).reduce((previousValue, currentValue) => {
+      let currentMin = Math.min(...Object.keys(data[currentValue]));
+
+      return currentMin < previousValue ? currentMin : previousValue;
+    }, 2100); //Giving us a little y2.1k problem
+  }
+
+  getMaxYear(data) {
+    return Object.keys(data).reduce((previousValue, currentValue) => {
+      let currentMin = Math.max(...Object.keys(data[currentValue]));
+
+      return currentMin > previousValue ? currentMin : previousValue;
+    }, 1970);
   }
 }
 

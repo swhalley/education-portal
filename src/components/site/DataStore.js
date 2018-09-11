@@ -22,30 +22,20 @@ class DataStore extends Component {
     );
   }
 
-  componentDidMount() {
-    this.loadSchoolGISData();
-    this.loadAttendanceData();
-    this.loadSchoolInformation();
-    this.loadFamilyOfSchools();
-  }
-
-  loadSchoolGISData() {}
-
-  loadAttendanceData() {}
-
   /**
-   * This data was created from the following page
+   * The Family of school and school information was created from the following page
    * https://edu.princeedwardisland.ca/psb/schools/school-information-2/
+   *
+   * Other data is from the PEI Open Data portal.
    */
-  loadSchoolInformation() {
-    this.retrieveAndSet("/data/wish/schools.json", "schoolInformation");
+  componentDidMount() {
+    this.load("familyOfSchools", "/data/wish/familyOfSchools.json");
+    this.load("schoolInformation", "/data/wish/schools.json");
+    this.load("attendance", "data/tkm2-qp3f.json"); //https://data.princeedwardisland.ca/resource/tkm2-qp3f.json"
+    this.load("gisData", "data/irvk-xaw3.json"); ////https://data.princeedwardisland.ca/resource/irvk-xaw3.json
   }
 
-  loadFamilyOfSchools() {
-    this.retrieveAndSet("/data/wish/familyOfSchools.json", "familyOfSchools");
-  }
-
-  retrieveAndSet(src, prop) {
+  load(prop, src) {
     fetch(src)
       .then(response => response.json())
       .then(data => {
