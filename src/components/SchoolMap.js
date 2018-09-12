@@ -24,12 +24,6 @@ class SchoolMap extends Component {
 
     return (
       <div>
-        <p>
-          School Map. I envision seeing all the school pins, and as you move the
-          map, the "center" point will know what family you are in and highlight
-          that family of schools on the map. Clicking a pin will open a right
-          drawer showing you school details
-        </p>
         <Map>{markers}</Map>
         <Drawer
           position="relative"

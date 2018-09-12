@@ -1,0 +1,464 @@
+[
+  {
+    "school_name": "Bluefield Senior High School",
+    "gradeMin": "10",
+    "gradeMax": "12",
+    "address": "924 Colville Rd – Rte 9, Hampshire",
+    "family": "Bluefield Family of Schools"
+  },
+  {
+    "school_name": "East Wiltshire Intermediate School",
+    "gradeMin": "7",
+    "gradeMax": "9",
+    "address": "100 Kingston Rd, Cornwall",
+    "family": "Bluefield Family of Schools"
+  },
+  {
+    "school_name": "Central Queens Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "19821 Rte 2, Hunter River",
+    "family": "Bluefield Family of Schools"
+  },
+  {
+    "school_name": "Eliot River Elementary School",
+    "gradeMin": "4",
+    "gradeMax": "6",
+    "address": "79 Hilltop Dr, Cornwall",
+    "family": "Bluefield Family of Schools"
+  },
+  {
+    "school_name": "Englewood School",
+    "gradeMin": "K",
+    "gradeMax": "9",
+    "address": "20280 Rte 1, Victoria",
+    "family": "Bluefield Family of Schools"
+  },
+  {
+    "school_name": "Gulf Shore Consolidated School",
+    "gradeMin": "K",
+    "gradeMax": "9",
+    "address": "185 Hilltop Av, North Rustico",
+    "family": "Bluefield Family of Schools"
+  },
+  {
+    "school_name": "Westwood Primary School",
+    "gradeMin": "K",
+    "gradeMax": "3",
+    "address": "80 Meadowbank Rd, Cornwall",
+    "family": "Bluefield Family of Schools"
+  },
+  {
+    "school_name": "Charlottetown Rural Senior High School",
+    "gradeMin": "10",
+    "gradeMax": "12",
+    "address": "100 Raiders Rd, Charlottetown",
+    "family": "Charlottetown Family of Schools"
+  },
+  {
+    "school_name": "Colonel Gray Senior High School",
+    "gradeMin": "10",
+    "gradeMax": "12",
+    "address": "175 Spring Park Rd, Charlottetown",
+    "family": "Charlottetown Family of Schools"
+  },
+  {
+    "school_name": "Birchwood Intermediate School",
+    "gradeMin": "7",
+    "gradeMax": "9",
+    "address": "49 Longworth Av, Charlottetown",
+    "family": "Charlottetown Family of Schools"
+  },
+  {
+    "school_name": "Donagh Regional School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "928 Bethel Rd – Rte 215, Donagh",
+    "family": "Charlottetown Family of Schools"
+  },
+  {
+    "school_name": "Glen Stewart Primary School",
+    "gradeMin": "K",
+    "gradeMax": "3",
+    "address": "34 Glen Stewart Dr, Glen Stewart",
+    "family": "Charlottetown Family of Schools"
+  },
+  {
+    "school_name": "L. M. Montgomery Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "69 MacWilliams Rd, Charlottetown",
+    "family": "Charlottetown Family of Schools"
+  },
+  {
+    "school_name": "Parkdale Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "49 Confederation St, Charlottetown",
+    "family": "Charlottetown Family of Schools"
+  },
+  {
+    "school_name": "Prince Street Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "60 Upper Prince St, Charlottetown",
+    "family": "Charlottetown Family of Schools"
+  },
+  {
+    "school_name": "Queen Charlotte Intermediate School",
+    "gradeMin": "7",
+    "gradeMax": "9",
+    "address": "150 North River Rd, Charlottetown",
+    "family": "Charlottetown Family of Schools"
+  },
+  {
+    "school_name": "Sherwood Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "64 Maple Av, Charlottetown",
+    "family": "Charlottetown Family of Schools"
+  },
+  {
+    "school_name": "Spring Park Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "30 Dunkirk St, Charlottetown",
+    "family": "Charlottetown Family of Schools"
+  },
+  {
+    "school_name": "St. Jean Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "335 Queen St, Charlottetown",
+    "family": "Charlottetown Family of Schools"
+  },
+  {
+    "school_name": "Stonepark Intermediate School",
+    "gradeMin": "7",
+    "gradeMax": "9",
+    "address": "50 Pope Av, Charlottetown",
+    "family": "Charlottetown Family of Schools"
+  },
+  {
+    "school_name": "Stratford Elementary School",
+    "gradeMin": "4",
+    "gradeMax": "6",
+    "address": "50 Glen Stewart Dr, Stratford",
+    "family": "Charlottetown Family of Schools"
+  },
+  {
+    "school_name": "West Kent Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "27 Viceroy Av, Charlottetown",
+    "family": "Charlottetown Family of Schools"
+  },
+  {
+    "school_name": "West Royalty Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "80 Commonwealth Av, Charlottetown",
+    "family": "Charlottetown Family of Schools"
+  },
+  {
+    "school_name": "Kensington Intermediate Senior High School",
+    "gradeMin": "7",
+    "gradeMax": "12",
+    "address": "19 Victoria St East, Kensington",
+    "family": "Kensington Family of Schools"
+  },
+  {
+    "school_name": "Queen Elizabeth Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "2 Saunders Ln, Kensington",
+    "family": "Kensington Family of Schools"
+  },
+  {
+    "school_name": "Kinkora Regional High School",
+    "gradeMin": "9",
+    "gradeMax": "12",
+    "address": "54 Anderson Rd, Kinkora",
+    "family": "Kinkora Family of Schools"
+  },
+  {
+    "school_name": "Amherst Cove Consolidated School",
+    "gradeMin": "K",
+    "gradeMax": "8",
+    "address": "300 Carleton St, Borden-Carleton",
+    "family": "Kinkora Family of Schools"
+  },
+  {
+    "school_name": "Somerset Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "8",
+    "address": "30 Somerset St, Kinkora",
+    "family": "Kinkora Family of Schools"
+  },
+  {
+    "school_name": "Montague Regional High School",
+    "gradeMin": "10",
+    "gradeMax": "12",
+    "address": "274 Valleyfield Rd – Rte 326, Lower Montague",
+    "family": "Montague Family of Schools"
+  },
+  {
+    "school_name": "Belfast Consolidated School",
+    "gradeMin": "K",
+    "gradeMax": "9",
+    "address": "3326 Rte 1, South Pinette",
+    "family": "Montague Family of Schools"
+  },
+  {
+    "school_name": "Cardigan Consolidated School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "1614 North Royatly Rd – Rte 342, Cardigan",
+    "family": "Montague Family of Schools"
+  },
+  {
+    "school_name": "Georgetown Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "8",
+    "address": "47 Kent St, Georgetown",
+    "family": "Montague Family of Schools"
+  },
+  {
+    "school_name": "Montague Consolidated School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "622 Princess Dr, Montague",
+    "family": "Montague Family of Schools"
+  },
+  {
+    "school_name": "Montague Intermediate School",
+    "gradeMin": "7",
+    "gradeMax": "9",
+    "address": "221 Kennedy St, Montague",
+    "family": "Montague Family of Schools"
+  },
+  {
+    "school_name": "Southern Kings Consolidated School",
+    "gradeMin": "K",
+    "gradeMax": "8",
+    "address": "2294 Peter’s Rd – Rte 324, Peter’s Road",
+    "family": "Montague Family of Schools"
+  },
+  {
+    "school_name": "Vernon River Consolidated School",
+    "gradeMin": "K",
+    "gradeMax": "9",
+    "address": "5505 Murray Harbour Rd – Rte 24, Vernon River",
+    "family": "Montague Family of Schools"
+  },
+  {
+    "school_name": "Morell Regional High School",
+    "gradeMin": "9",
+    "gradeMax": "12",
+    "address": "100 Little Flower Av – Rte 322, Morell",
+    "family": "Morell Family of Schools"
+  },
+  {
+    "school_name": "Morell Consolidated School",
+    "gradeMin": "K",
+    "gradeMax": "8",
+    "address": "7755 St Peters Rd – Rte 2, Morell",
+    "family": "Morell Family of Schools"
+  },
+  {
+    "school_name": "Mt. Stewart Consolidated School",
+    "gradeMin": "K",
+    "gradeMax": "8",
+    "address": "120 South Main St – Rte 351, Mt. Stewart",
+    "family": "Morell Family of Schools"
+  },
+  {
+    "school_name": "Souris Regional School",
+    "gradeMin": "K",
+    "gradeMax": "12",
+    "address": "15 Longworth St, Souris",
+    "family": "Souris Family of Schools"
+  },
+  {
+    "school_name": "Three Oaks Senior High School",
+    "gradeMin": "10",
+    "gradeMax": "12",
+    "address": "10 Kenmoore Av, Summerside",
+    "family": "Three Oaks Family of Schools"
+  },
+  {
+    "school_name": "Athena Consolidated School",
+    "gradeMin": "K",
+    "gradeMax": "9",
+    "address": "150 Ryan St, Summerside",
+    "family": "Three Oaks Family of Schools"
+  },
+  {
+    "school_name": "Elm Street Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "256 Elm St, Summerside",
+    "family": "Three Oaks Family of Schools"
+  },
+  {
+    "school_name": "Greenfield Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "100 Darby Dr, Summerside",
+    "family": "Three Oaks Family of Schools"
+  },
+  {
+    "school_name": "Miscouche Consolidated School",
+    "gradeMin": "K",
+    "gradeMax": "9",
+    "address": "19 School St, Miscouche",
+    "family": "Three Oaks Family of Schools"
+  },
+  {
+    "school_name": "Parkside Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "195 Summer St, Summerside",
+    "family": "Three Oaks Family of Schools"
+  },
+  {
+    "school_name": "Summerside Intermediate School",
+    "gradeMin": "7",
+    "gradeMax": "9",
+    "address": "247 Central St, Summerside",
+    "family": "Three Oaks Family of Schools"
+  },
+  {
+    "school_name": "Westisle Composite High School",
+    "gradeMin": "10",
+    "gradeMax": "12",
+    "address": "39570 Western Rd – Rte 2, Rosebank",
+    "family": "Westisle Family of Schools"
+  },
+  {
+    "school_name": "Alberton Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "354 Church St, Alberton",
+    "family": "Westisle Family of Schools"
+  },
+  {
+    "school_name": "Bloomfield Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "2472 O’Halloran Rd – Rte 145, Bloomfield Corner",
+    "family": "Westisle Family of Schools"
+  },
+  {
+    "school_name": "Ellerslie Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "1226 Ellerslie Rd – Rte 133, Ellerslie-Bideford",
+    "family": "Westisle Family of Schools"
+  },
+  {
+    "school_name": "Hernewood Intermediate School",
+    "gradeMin": "7",
+    "gradeMax": "9",
+    "address": "34 Mill Rd – Rte 136, Woodstock",
+    "family": "Westisle Family of Schools"
+  },
+  {
+    "school_name": "M. E. Callaghan Intermediate School",
+    "gradeMin": "7",
+    "gradeMax": "9",
+    "address": "41870 Western Rd – Rte 2, St. Roch",
+    "family": "Westisle Family of Schools"
+  },
+  {
+    "school_name": "O’Leary Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "25 Barclay Rd, O’Leary",
+    "family": "Westisle Family of Schools"
+  },
+  {
+    "school_name": "St. Louis Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "3807 Union Rd – Rte 152, St. Edward",
+    "family": "Westisle Family of Schools"
+  },
+  {
+    "school_name": "Tignish Elementary School",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "322 Church St, Tignish",
+    "family": "Westisle Family of Schools"
+  },
+  {
+    "school_name": "Provincial Adolescent School",
+    "gradeMin": "7",
+    "gradeMax": "12",
+    "address": "40 Enman Cr, Charlottetown",
+    "family": "Alternative Education Sites"
+  },
+  {
+    "school_name": "Central Alternative A+ Program",
+    "gradeMin": "3",
+    "gradeMax": "6",
+    "address": "335 Queen St, Charlottetown",
+    "family": "Alternative Education Sites"
+  },
+  {
+    "school_name": "Charlottetown Intermediate/Senior Alternative Education",
+    "gradeMin": "7",
+    "gradeMax": "12",
+    "address": "40 Enman Cr, Charlottetown",
+    "family": "Alternative Education Sites"
+  },
+  {
+    "school_name": "East A+ Program",
+    "gradeMin": "3",
+    "gradeMax": "6",
+    "address": "622 Princess Dr, Montague",
+    "family": "Alternative Education Sites"
+  },
+  {
+    "school_name": "Montague Alternative Education",
+    "gradeMin": "7",
+    "gradeMax": "12",
+    "address": "513 Main St, Montague",
+    "family": "Alternative Education Sites"
+  },
+  {
+    "school_name": "Souris Alternative Education",
+    "gradeMin": "7",
+    "gradeMax": "12",
+    "address": "175 Main St, Souris",
+    "family": "Alternative Education Sites"
+  },
+  {
+    "school_name": "Summerside Alternative Education",
+    "gradeMin": "7",
+    "gradeMax": "12",
+    "address": "10 Kenmoore Av, Summerside",
+    "family": "Alternative Education Sites"
+  },
+  {
+    "school_name": "West A+ Program",
+    "gradeMin": "3",
+    "gradeMax": "6",
+    "address": "256 Elm St, Summerside",
+    "family": "Alternative Education Sites"
+  },
+  {
+    "school_name": "West Prince A+ Program",
+    "gradeMin": "K",
+    "gradeMax": "6",
+    "address": "25 Barclay Rd, O’Leary",
+    "family": "Alternative Education Sites"
+  },
+  {
+    "school_name": "Westisle Alternative Education",
+    "gradeMin": "7",
+    "gradeMax": "12",
+    "address": "39570 Western Rd – Rte 2, Rosebank",
+    "family": "Alternative Education Sites"
+  }
+]

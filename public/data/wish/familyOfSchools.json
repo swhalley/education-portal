@@ -1,0 +1,201 @@
+{
+  "Bluefield Family of Schools": [
+    {
+      "name": "Bluefield Senior High School",
+      "children": [
+        {
+          "name": "East Wiltshire Intermediate School",
+          "children": [
+            {
+              "name": "Central Queens Elementary School"
+            },
+            {
+              "name": "Eliot River Elementary School",
+              "children": [
+                {
+                  "name": "Westwood Primary School"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gulf Shore Consolidated School"
+        },
+        {
+          "name": "Englewood School"
+        }
+      ]
+    }
+  ],
+  "Charlottetown Family of Schools": [
+    {
+      "name": "Charlottetown Rural Senior High School",
+      "children": [
+        {
+          "name": "Stonepark Intermediate School",
+          "children": [
+            {
+              "name": "Donagh Regional School"
+            },
+            {
+              "name": "L. M. Montgomery Elementary School"
+            },
+            {
+              "name": "Sherwood Elementary School"
+            },
+            {
+              "name": "Stratford Elementary School",
+              "children": [
+                {
+                  "name": "Glen Stewart Primary School"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Colonel Gray Senior High School",
+      "children": [
+        {
+          "name": "Birchwood Intermediate School"
+        },
+        {
+          "name": "Queen Charlotte Intermediate School"
+        }
+      ],
+      "_notDetermined": [
+        "Parkdale Elementary School",
+        "Prince Street Elementary School",
+        "Spring Park Elementary School",
+        "St. Jean Elementary School",
+        "West Kent Elementary School",
+        "West Royalty Elementary School"
+      ]
+    }
+  ],
+  "Kensington Family of Schools": [
+    {
+      "name": "Kensington Intermediate Senior High School",
+      "children": [
+        {
+          "name": "Queen Elizabeth Elementary School"
+        }
+      ]
+    }
+  ],
+  "Kinkora Family of Schools": [
+    {
+      "name": "Kinkora Regional High School",
+      "children": [
+        {
+          "name": "Amherst Cove Consolidated School"
+        },
+        {
+          "name": "Somerset Elementary School"
+        }
+      ]
+    }
+  ],
+  "Montague Family of Schools": [
+    {
+      "name": "Montague Regional High School",
+      "undetermined": [
+        "Southern Kings Consolidated School",
+        "Georgetown Elementary School"
+      ],
+      "notes": "The undetermined are K-8, but no school starts at 9. So these schools must blend into another. How do we represent this? ",
+      "children": [
+        {
+          "name": "Belfast Consolidated School"
+        },
+        {
+          "name": "Montague Intermediate School",
+          "children": [
+            {
+              "name": "Cardigan Consolidated School"
+            },
+            {
+              "name": "Montague Consolidated School"
+            }
+          ]
+        },
+        {
+          "name": "Vernon River Consolidated School"
+        }
+      ]
+    }
+  ],
+  "Morell Family of Schools": [
+    {
+      "name": "Morell Regional High School",
+      "children": [
+        {
+          "name": "Morell Consolidated School"
+        },
+        {
+          "name": "Mt. Stewart Consolidated School"
+        }
+      ]
+    }
+  ],
+  "Souris Family of Schools": [
+    {
+      "name": "Souris Regional School"
+    }
+  ],
+  "Three Oaks Family of Schools": [
+    {
+      "name": "Three Oaks Senior High School",
+      "children": [
+        {
+          "name": "Athena Consolidated School"
+        },
+        {
+          "name": "Miscouche Consolidated School"
+        },
+        {
+          "name": "Summerside Intermediate School",
+          "children": [
+            {
+              "name": "Parkside Elementary School"
+            },
+            {
+              "name": "Greenfield Elementary School"
+            },
+            {
+              "name": "Elm Street Elementary School"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Westisle Family of Schools": [
+    {
+      "name": "Westisle Composite High School",
+      "undetermined": [
+        "Alberton Elementary School",
+        "Bloomfield Elementary School",
+        "Ellerslie Elementary School",
+        "O’Leary Elementary School",
+        "St. Louis Elementary School",
+        "Tignish Elementary School"
+      ],
+      "notes": "All of the pre-7 schools are the same. no idea what feeds what?",
+      "children": [
+        {
+          "name": "Hernewood Intermediate School",
+          "children": []
+        },
+        {
+          "name": "M. E. Callaghan Intermediate School",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "Alternative Education Sites": []
+}

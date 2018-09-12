@@ -123,6 +123,20 @@ export default class _WishList extends Component {
                 </li>
               </ul>
             </li>
+            <li>
+              Zone Information for Schools.
+              <ul>
+                <li>
+                  https://www.princeedwardisland.ca/en/topic/school-zone-maps
+                </li>
+                <li>https://ruk.ca/content/prince-edward-island-schools-map</li>
+                <li>The information for new school zones is there in PDF's</li>
+                <li>
+                  Previous attempt at school zone mapping available via ruk
+                  circa 2011
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
