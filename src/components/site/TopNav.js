@@ -10,6 +10,7 @@ import CallMergeIcon from "@material-ui/icons/CallMerge";
 import DoneOutlineIcon from "@material-ui/icons/DoneOutline";
 import Battery90Icon from "@material-ui/icons/Battery90";
 import LaunchIcon from "@material-ui/icons/Launch";
+import FastfoodIcon from "@material-ui/icons/Fastfood";
 
 import {
   AppBar,
@@ -27,11 +28,13 @@ import { Drawer } from "@material-ui/core";
 
 class TopNav extends Component {
   state = {
-    navOpen: false
+    navOpen: false,
+    title: "An Open Data Look"
   };
 
   render() {
-    let { classes } = this.props;
+    const { classes } = this.props;
+    const { title } = this.state;
 
     return (
       <AppBar position="static">
@@ -44,7 +47,7 @@ class TopNav extends Component {
             <MenuIcon />
           </IconButton>
           <Typography variant="title" color="inherit" className={classes.grow}>
-            PEI Schools - An Open Data Look
+            PEI Schools - {title}
           </Typography>
           <Button
             color="inherit"
@@ -63,14 +66,20 @@ class TopNav extends Component {
           onClose={() => this.setState({ navOpen: false })}
         >
           <List component="nav">
-            <ListItem button onClick={() => this.menuItemClick("/")}>
+            <ListItem
+              button
+              onClick={() => this.menuItemClick("/", "An Open Data Look")}
+            >
               <ListItemIcon>
                 <HomeIcon />
               </ListItemIcon>
               <ListItemText primary="Home" />
             </ListItem>
 
-            <ListItem button onClick={() => this.menuItemClick("/schoolMap")}>
+            <ListItem
+              button
+              onClick={() => this.menuItemClick("/schoolMap", "School Map")}
+            >
               <ListItemIcon>
                 <MyLocationIcon />
               </ListItemIcon>
@@ -79,7 +88,9 @@ class TopNav extends Component {
 
             <ListItem
               button
-              onClick={() => this.menuItemClick("/schoolAttendance")}
+              onClick={() =>
+                this.menuItemClick("/schoolAttendance", "School Attendance")
+              }
             >
               <ListItemIcon>
                 <SchoolIcon />
@@ -87,29 +98,60 @@ class TopNav extends Component {
               <ListItemText primary="School Attendance" />
             </ListItem>
 
-            <ListItem button onClick={() => this.menuItemClick("/families")}>
+            <ListItem
+              button
+              onClick={() =>
+                this.menuItemClick("/families", "Family of Schools")
+              }
+            >
               <ListItemIcon>
                 <CallMergeIcon />
               </ListItemIcon>
               <ListItemText primary="Family of Schools" />
             </ListItem>
 
-            <ListItem button onClick={() => this.menuItemClick("/testing")}>
+            <ListItem
+              button
+              onClick={() =>
+                this.menuItemClick("/testing", "Standardized Testing")
+              }
+            >
               <ListItemIcon>
                 <DoneOutlineIcon />
               </ListItemIcon>
               <ListItemText primary="Standardized Testing" />
             </ListItem>
 
-            <ListItem button onClick={() => this.menuItemClick("/capacity")}>
+            <ListItem
+              button
+              onClick={() => this.menuItemClick("/capacity", "True Capacity")}
+            >
               <ListItemIcon>
                 <Battery90Icon />
               </ListItemIcon>
               <ListItemText primary="True Capacity" />
             </ListItem>
 
+            <ListItem
+              button
+              onClick={() =>
+                this.menuItemClick(
+                  "/industry",
+                  "Industry Inspired Course Selection"
+                )
+              }
+            >
+              <ListItemIcon>
+                <FastfoodIcon />
+              </ListItemIcon>
+              <ListItemText primary="Industry" />
+            </ListItem>
+
             <Divider />
-            <ListItem button onClick={() => this.menuItemClick("/wishList")}>
+            <ListItem
+              button
+              onClick={() => this.menuItemClick("/wishList", "My Wish List")}
+            >
               <ListItemIcon>
                 <PlaylistAddIcon />
               </ListItemIcon>
@@ -121,9 +163,9 @@ class TopNav extends Component {
     );
   }
 
-  menuItemClick(path) {
+  menuItemClick(path, title) {
     this.props.history.push(path);
-    this.setState({ navOpen: false });
+    this.setState({ navOpen: false, title, title });
   }
 }
 

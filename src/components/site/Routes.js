@@ -7,6 +7,7 @@ import Attendance from "../Attendance";
 import StandardizedTesting from "../StandardizedTesting";
 import SchoolMap from "../SchoolMap";
 import Capacity from "../Capacity";
+import Industry from "../Industry";
 import { DataStoreConsumer } from "./DataStore";
 
 export default class Routes extends Component {
@@ -58,6 +59,7 @@ export default class Routes extends Component {
           />
           <Route path="/testing" component={StandardizedTesting} />
           <Route path="/capacity" render={() => <Capacity />} />
+          <Route path="/industry" render={() => <Industry />} />
           <Route path="/wishList" component={WishList} />
           <Route component={Home} />
         </Switch>
