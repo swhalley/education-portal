@@ -55,8 +55,7 @@ class TopNav extends Component {
               )
             }
           >
-            <LaunchIcon />
-            Licence Information
+            <LaunchIcon /> Licence Information
           </Button>
         </Toolbar>
         <Drawer

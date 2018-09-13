@@ -8,7 +8,7 @@ const Map = compose(
       process.env.REACT_APP_GOOGLE_MAPS_API_KEY
     }`,
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `90vh` }} />,
+    containerElement: <div style={{ height: `80vh` }} />,
     mapElement: <div style={{ height: `100%` }} />
   }),
   withScriptjs,

@@ -1,12 +1,10 @@
 import React, { Component, Fragment } from "react";
-
 import InfoIcon from "@material-ui/icons/Info";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
-
-import SchoolsTable from "./school/SchoolsTable";
-import AttendanceBlob from "./school/about/AttendanceBlob";
 import { withStyles, SnackbarContent, Snackbar } from "@material-ui/core";
+import SchoolsTable from "./school/SchoolsTable";
+import AboutThisPage, { AttendanceBlob } from "./school/about";
 
 const styles = theme => ({
   message: {
@@ -36,7 +34,9 @@ class Attendance extends Component {
 
     return (
       <Fragment>
-        <AttendanceBlob />
+        <AboutThisPage>
+          <AttendanceBlob />
+        </AboutThisPage>
         <Snackbar
           open={this.state.infoOpen}
           autoHideDuration={20000}

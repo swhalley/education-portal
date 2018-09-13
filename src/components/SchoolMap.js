@@ -5,6 +5,7 @@ import { Marker } from "react-google-maps"; //SMELL refactor into "PEISchoolMap 
 import SchoolMiniData from "./school/SchoolMiniData";
 import { lookup } from "./site/AlternativeNameLookup";
 import FamilyTree from "./school/FamilyTree";
+import AboutThisPage, { SchoolMapBlob } from "./school/about/";
 
 const styles = {
   miniDrawerFamily: {
@@ -24,6 +25,9 @@ class SchoolMap extends Component {
 
     return (
       <div>
+        <AboutThisPage>
+          <SchoolMapBlob />
+        </AboutThisPage>
         <Map>{markers}</Map>
         <Drawer
           position="relative"

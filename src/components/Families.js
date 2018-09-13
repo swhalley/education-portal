@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import FamilyOfSchoolSelect from "./school/FamilyOfSchoolSelect";
 import FamilyTree from "./school/FamilyTree";
 import { withStyles } from "@material-ui/core";
-import FamilyBlob from "./school/about/FamilyBlob";
+import AboutThisPage, { FamilyBlob } from "./school/about";
 
 const styles = {
   formControl: {
@@ -20,7 +20,9 @@ class Families extends Component {
 
     return (
       <React.Fragment>
-        <FamilyBlob />
+        <AboutThisPage>
+          <FamilyBlob />
+        </AboutThisPage>
         <FamilyOfSchoolSelect
           families={this.props.families}
           onChange={this.familySelected.bind(this)}
