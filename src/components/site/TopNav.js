@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
+import { withStyles } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import HomeIcon from "@material-ui/icons/Home";
 import SchoolIcon from "@material-ui/icons/School";
@@ -8,6 +9,7 @@ import PlaylistAddIcon from "@material-ui/icons/PlaylistAdd";
 import CallMergeIcon from "@material-ui/icons/CallMerge";
 import DoneOutlineIcon from "@material-ui/icons/DoneOutline";
 import Battery90Icon from "@material-ui/icons/Battery90";
+import LaunchIcon from "@material-ui/icons/Launch";
 
 import {
   AppBar,
@@ -18,7 +20,8 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
-  Divider
+  Divider,
+  Button
 } from "@material-ui/core";
 import { Drawer } from "@material-ui/core";
 
@@ -28,6 +31,8 @@ class TopNav extends Component {
   };
 
   render() {
+    let { classes } = this.props;
+
     return (
       <AppBar position="static">
         <Toolbar>
@@ -38,9 +43,21 @@ class TopNav extends Component {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="title" color="inherit">
+          <Typography variant="title" color="inherit" className={classes.grow}>
             PEI Schools - An Open Data Look
           </Typography>
+          <Button
+            color="inherit"
+            onClick={() =>
+              window.open(
+                "https://www.princeedwardisland.ca/en/information/finance/open-government-licence-prince-edward-island",
+                "licence"
+              )
+            }
+          >
+            <LaunchIcon />
+            Licence Information
+          </Button>
         </Toolbar>
         <Drawer
           open={this.state.navOpen}
@@ -111,4 +128,10 @@ class TopNav extends Component {
   }
 }
 
-export default withRouter(TopNav);
+const styles = {
+  grow: {
+    flexGrow: "1"
+  }
+};
+
+export default withStyles(styles)(withRouter(TopNav));
